@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="title" content="Awoo Team">
+	<meta name="description" content="Сайт Twitch команды Awoo">
+	<meta name="keywords" content="furry, twitch, awoo, фурри, твич, vtuber, vtube, витубер, витебуры">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="Russian">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@">
+	<meta name="twitter:title" content="Awoo Team">
+	<meta name="twitter:description" content="Сайт Twitch команды Awoo">
+	
+	<link rel="stylesheet" href="./static/default.css?v=1">
+	<link rel="stylesheet" href="./static/tts.css?v=1">
+	
+	<title>Awoo TTS</title>
+</head>
+<body>
+	<nav class="navigation">
+		<ul class="navigation__ul">
+			<li class="navigation__li navigation__li--logo">
+				<img class="navigation__logo" src="assets/images/logo.svg" alt="">
+				<a class="navigation__logo-a" href="./" aria-label="На главную страницу"></a>
+			</li>
+			<li class="navigation__li">
+				<a class="navigation__a" href="./tts">Awoo TTS</a>
+			</li>
+			<li class="navigation__li">
+				<a class="navigation__a" href="https://discord.gg/nWaqmrPS2R" target="_blank">Discord сервер</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<main class="main">
+		<div class="soundboard">
+			<h1 class="h1">Звуки для TTS</h1>
+			<ul class="soundboard__ul" onclick="soundHandler(event)">
+				<li class="soundboard__li" data-sound="21">
+					<span class="soundboard__title">21</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="alert">
+					<span class="soundboard__title">alert</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="amogus_emergency">
+					<span class="soundboard__title">amogus_emergency</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="amogus_kill">
+					<span class="soundboard__title">amogus_kill</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="amongdrip">
+					<span class="soundboard__title">amongdrip</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="augh">
+					<span class="soundboard__title">augh</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="baby_cry1">
+					<span class="soundboard__title">baby_cry1</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="baby_cry2">
+					<span class="soundboard__title">baby_cry2</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="badumtiss">
+					<span class="soundboard__title">badumtiss</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bell">
+					<span class="soundboard__title">bell</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ben_no">
+					<span class="soundboard__title">ben_no</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ben_yes">
+					<span class="soundboard__title">ben_yes</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bing_chilling">
+					<span class="soundboard__title">bing_chilling</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bleep">
+					<span class="soundboard__title">bleep</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bombastic_side_eye">
+					<span class="soundboard__title">bombastic_side_eye</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bong">
+					<span class="soundboard__title">bong</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bonk">
+					<span class="soundboard__title">bonk</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="boom">
+					<span class="soundboard__title">boom</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="boowomp">
+					<span class="soundboard__title">boowomp</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="bruh">
+					<span class="soundboard__title">bruh</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="burp">
+					<span class="soundboard__title">burp</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="buzzer">
+					<span class="soundboard__title">buzzer</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="cardboard_pipe">
+					<span class="soundboard__title">cardboard_pipe</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="cave">
+					<span class="soundboard__title">cave</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="celeste_death">
+					<span class="soundboard__title">celeste_death</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="clown_horn">
+					<span class="soundboard__title">clown_horn</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="cod_mission_fail">
+					<span class="soundboard__title">cod_mission_fail</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="coughing">
+					<span class="soundboard__title">coughing</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="creeper">
+					<span class="soundboard__title">creeper</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="daddy_chill">
+					<span class="soundboard__title">daddy_chill</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="defeat">
+					<span class="soundboard__title">defeat</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="disappointed">
+					<span class="soundboard__title">disappointed</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="disgusting">
+					<span class="soundboard__title">disgusting</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="door_close">
+					<span class="soundboard__title">door_close</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="door_knock">
+					<span class="soundboard__title">door_knock</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="door_open">
+					<span class="soundboard__title">door_open</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="drinking">
+					<span class="soundboard__title">drinking</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="drinking_2">
+					<span class="soundboard__title">drinking_2</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="eating">
+					<span class="soundboard__title">eating</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="error">
+					<span class="soundboard__title">error</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="explosion">
+					<span class="soundboard__title">explosion</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="fail">
+					<span class="soundboard__title">fail</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="fart">
+					<span class="soundboard__title">fart</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="fbi_open_up">
+					<span class="soundboard__title">fbi_open_up</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="fn_shield_drink">
+					<span class="soundboard__title">fn_shield_drink</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gasp_crowd">
+					<span class="soundboard__title">gasp_crowd</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gasp_female">
+					<span class="soundboard__title">gasp_female</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gaster">
+					<span class="soundboard__title">gaster</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="glass_breaking">
+					<span class="soundboard__title">glass_breaking</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gnome">
+					<span class="soundboard__title">gnome</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="god_damn">
+					<span class="soundboard__title">god_damn</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="goofy_yell">
+					<span class="soundboard__title">goofy_yell</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gta_mission_fail">
+					<span class="soundboard__title">gta_mission_fail</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gta_mission_pass">
+					<span class="soundboard__title">gta_mission_pass</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gun">
+					<span class="soundboard__title">gun</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="gunshot">
+					<span class="soundboard__title">gunshot</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="heartbeat">
+					<span class="soundboard__title">heartbeat</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="hehehehaw">
+					<span class="soundboard__title">hehehehaw</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="hello_bozo">
+					<span class="soundboard__title">hello_bozo</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ho_ho_ho">
+					<span class="soundboard__title">ho_ho_ho</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="honk">
+					<span class="soundboard__title">honk</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="i_see_you">
+					<span class="soundboard__title">i_see_you</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="iphone_alarm">
+					<span class="soundboard__title">iphone_alarm</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="isaac_dead">
+					<span class="soundboard__title">isaac_dead</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="kaching">
+					<span class="soundboard__title">kaching</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="kekw_laugh">
+					<span class="soundboard__title">kekw_laugh</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="kiss">
+					<span class="soundboard__title">kiss</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="krabs">
+					<span class="soundboard__title">krabs</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="laughter">
+					<span class="soundboard__title">laughter</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="law_and_order">
+					<span class="soundboard__title">law_and_order</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="leave_a_message">
+					<span class="soundboard__title">leave_a_message</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="mario_fall">
+					<span class="soundboard__title">mario_fall</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="mariopaint_star">
+					<span class="soundboard__title">mariopaint_star</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="megalovania">
+					<span class="soundboard__title">megalovania</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="minecraft_damage">
+					<span class="soundboard__title">minecraft_damage</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="minecraft_eating">
+					<span class="soundboard__title">minecraft_eating</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="minecraft_explosion">
+					<span class="soundboard__title">minecraft_explosion</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="minecraft_zombie">
+					<span class="soundboard__title">minecraft_zombie</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="morningflower">
+					<span class="soundboard__title">morningflower</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="mouse_click">
+					<span class="soundboard__title">mouse_click</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="nani">
+					<span class="soundboard__title">nani</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="necoarc">
+					<span class="soundboard__title">necoarc</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="noice">
+					<span class="soundboard__title">noice</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="noot_noot">
+					<span class="soundboard__title">noot_noot</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="nope">
+					<span class="soundboard__title">nope</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="not_that_guy">
+					<span class="soundboard__title">not_that_guy</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="noteblock_pling">
+					<span class="soundboard__title">noteblock_pling</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ohmygawd">
+					<span class="soundboard__title">ohmygawd</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="oof">
+					<span class="soundboard__title">oof</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="pants_unzip">
+					<span class="soundboard__title">pants_unzip</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="peeing">
+					<span class="soundboard__title">peeing</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="phone_nokia">
+					<span class="soundboard__title">phone_nokia</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="phone_ringing">
+					<span class="soundboard__title">phone_ringing</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="phone_vibrate">
+					<span class="soundboard__title">phone_vibrate</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="phone_waiting">
+					<span class="soundboard__title">phone_waiting</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="pipes">
+					<span class="soundboard__title">pipes</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="plug_in">
+					<span class="soundboard__title">plug_in</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="plug_out">
+					<span class="soundboard__title">plug_out</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="pluh">
+					<span class="soundboard__title">pluh</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="punch">
+					<span class="soundboard__title">punch</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="quack">
+					<span class="soundboard__title">quack</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ripping">
+					<span class="soundboard__title">ripping</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="sad_trombone">
+					<span class="soundboard__title">sad_trombone</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="samsung">
+					<span class="soundboard__title">samsung</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="silence">
+					<span class="soundboard__title">silence</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="skeleton">
+					<span class="soundboard__title">skeleton</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="slack_message">
+					<span class="soundboard__title">slack_message</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="slap">
+					<span class="soundboard__title">slap</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="slow_clap">
+					<span class="soundboard__title">slow_clap</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="sm64_hurt">
+					<span class="soundboard__title">sm64_hurt</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="sm64_painting">
+					<span class="soundboard__title">sm64_painting</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="smw_1up">
+					<span class="soundboard__title">smw_1up</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="smw_coin">
+					<span class="soundboard__title">smw_coin</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="smw_kick">
+					<span class="soundboard__title">smw_kick</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="smw_spinjump">
+					<span class="soundboard__title">smw_spinjump</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="smw_stomp">
+					<span class="soundboard__title">smw_stomp</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="someones_mad">
+					<span class="soundboard__title">someones_mad</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="spiderman">
+					<span class="soundboard__title">spiderman</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="stab">
+					<span class="soundboard__title">stab</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="stop_the_cap">
+					<span class="soundboard__title">stop_the_cap</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="suspense">
+					<span class="soundboard__title">suspense</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="tada">
+					<span class="soundboard__title">tada</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="terraria_axe">
+					<span class="soundboard__title">terraria_axe</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="terraria_guitar">
+					<span class="soundboard__title">terraria_guitar</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="terraria_pot">
+					<span class="soundboard__title">terraria_pot</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="thats_what_she_said">
+					<span class="soundboard__title">thats_what_she_said</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="this_guy_stinks">
+					<span class="soundboard__title">this_guy_stinks</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="thwomp">
+					<span class="soundboard__title">thwomp</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="troll_laugh">
+					<span class="soundboard__title">troll_laugh</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="tuturu">
+					<span class="soundboard__title">tuturu</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="twitch_bits">
+					<span class="soundboard__title">twitch_bits</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="two_hours_later">
+					<span class="soundboard__title">two_hours_later</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="typing">
+					<span class="soundboard__title">typing</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="ultrainstinct">
+					<span class="soundboard__title">ultrainstinct</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="uwu">
+					<span class="soundboard__title">uwu</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="wait_wait">
+					<span class="soundboard__title">wait_wait</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="walking">
+					<span class="soundboard__title">walking</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="waterphone">
+					<span class="soundboard__title">waterphone</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="what_do_you_mean">
+					<span class="soundboard__title">what_do_you_mean</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="what_the_dog_doin">
+					<span class="soundboard__title">what_the_dog_doin</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="whatsapp">
+					<span class="soundboard__title">whatsapp</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="whipcrack">
+					<span class="soundboard__title">whipcrack</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="why_u_bully_me">
+					<span class="soundboard__title">why_u_bully_me</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="wilhelm_scream">
+					<span class="soundboard__title">wilhelm_scream</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="yahoo">
+					<span class="soundboard__title">yahoo</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="yoda">
+					<span class="soundboard__title">yoda</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+				<li class="soundboard__li" data-sound="you_played_yourself">
+					<span class="soundboard__title">you_played_yourself</span>
+					<button data-type="copy" class="soundboard__btn" aria-label="Скопировать звук">
+						<img class="soundboard__icon" src="./static/icons/copy.svg" alt="Иконка звука">
+					</button>
+					<button data-type="play" class="soundboard__btn" aria-label="Прослушать звук">
+						<img class="soundboard__icon" src="./static/icons/headphones.svg" alt="Иконка наушников">
+					</button>
+				</li>
+			</ul>
+		</div>
+	</main>
+	
+	<span class="signature">Made with 💖 by <a class="signature__a" href="https://dellyare.com" target="_blank">Dellyare</a></span>
+</body>
+
+<script>
+	function soundHandler(e) {
+		if (e.target.tagName !== "BUTTON") return;
+		
+		const target = e.target;
+		
+		switch (target.attributes["data-type"].value) {
+			case "copy":
+				copyTextToClipboard(`[${target.parentElement.attributes["data-sound"].value}] `)
+				break;
+			case "play":
+				playSound(target.parentElement.attributes["data-sound"].value)
+				break;
+		}
+	}
+	
+	function playSound(soundName) {
+		const audio = new Audio(`./assets/sounds/${soundName}.wav`);
+
+		audio.play();
+	}
+	
+	function copyTextToClipboard(text) {
+		navigator.clipboard.writeText(text);
+	}
+</script>
+
+</html>

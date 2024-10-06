@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="title" content="Awoo Team">
+	<meta name="description" content="Сайт Twitch команды Awoo">
+	<meta name="keywords" content="furry, twitch, awoo, фурри, твич, vtuber, vtube, витубер, витебуры">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="Russian">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@">
+	<meta name="twitter:title" content="Awoo Team">
+	<meta name="twitter:description" content="Сайт Twitch команды Awoo">
+
+	<link rel="stylesheet" href="./static/default.css?v=1">
+	<link rel="stylesheet" href="./static/index.css?v=1">
+
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+	<title>Awoo team</title>
+</head>
+
+<body>
+	<nav class="navigation">
+		<ul class="navigation__ul">
+			<li class="navigation__li navigation__li--logo">
+				<img class="navigation__logo" src="assets/images/logo.svg" alt="">
+				<a class="navigation__logo-a" href="./" aria-label="На главную страницу"></a>
+			</li>
+			<li class="navigation__li">
+				<a class="navigation__a" href="./tts">Awoo TTS</a>
+			</li>
+			<li class="navigation__li">
+				<a class="navigation__a" href="https://discord.gg/nWaqmrPS2R" target="_blank">Discord сервер</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<main class="main">
+		<div class="channel-container">
+			<nav class="channels-list">
+				<ul id="channelsList" class="channels-list__ul">
+					<li id="channelbtn-m1shapager" class="channels-list__li channels-list__li--active">
+						<button aria-label="Выбрать канал MishaPager" class="channels-list__button" onclick="changeChannel('m1shapager')">
+							<img class="channels-list__img" src="./assets/images/avatars/m1shapager.png" alt="MishaPager Twitch Аватар">
+						</button>
+					</li>
+					<li id="channelbtn-dellyare" class="channels-list__li">
+						<button aria-label="Выбрать канал Dellyare" class="channels-list__button" onclick="changeChannel('dellyare')">
+							<img class="channels-list__img" src="./assets/images/avatars/dellyare.png" alt="Dellyare Twitch Аватар">
+						</button>
+					</li>
+					<li id="channelbtn-fluffy_mooon" class="channels-list__li">
+						<button aria-label="Выбрать канал Fluffy_Mooon" class="channels-list__button" onclick="changeChannel('fluffy_mooon')">
+							<img class="channels-list__img" src="./assets/images/avatars/fluffy_mooon.png" alt="fluffy_mooon Twitch Аватар">
+						</button>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="twitch-embed"></div>
+		</div>
+
+		<script type="text/javascript">
+			const channelsList = document.getElementById("channelsList").children;
+			
+			const mainPlayer = new Twitch.Embed("twitch-embed", {
+				channel: "m1shapager",
+				layout: "video",
+				theme: "dark",
+			});
+			
+			function changeChannel(channel) {
+				mainPlayer.setChannel(channel);
+
+				for (let i = 0; i < channelsList.length; i++) {
+					channelsList[i].classList.remove("channels-list__li--active");
+				}
+
+				document.getElementById(`channelbtn-${channel}`).classList.add("channels-list__li--active");
+			}
+		</script>
+	</main>
+	
+	<span class="signature">Made with 💖 by <a class="signature__a" href="https://dellyare.com" target="_blank">Dellyare</a></span>
+</body>
+
+</html>

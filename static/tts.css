@@ -1,0 +1,46 @@
+.soundboard {
+    width: 100%;
+}
+
+.soundboard__ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px 25px;
+}
+
+.soundboard__li {
+    border: 2px solid #312559;
+    background: #121323;
+    border-radius: 25px;
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.soundboard__li:hover {
+    background: #312559;
+}
+
+.soundboard__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.soundboard__icon {
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.soundboard__title {
+    color: #fff;
+    margin-right: auto;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    pointer-events: none;
+}
